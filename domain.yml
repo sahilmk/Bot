@@ -1,0 +1,30 @@
+version: "3.0"
+
+intents:
+  - inform
+  - finish
+
+entities:
+  - name
+
+slots:
+  name:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: name
+
+responses:
+  utter_greet:
+    - text: "Hello welcome to the xyz hopital"
+  utter_inform:
+    - text: "Welcome {name} to our hospital"
+  utter_finish:
+    - text: "Pleasure to meet you"
+
+actions:
+  - action_get_response
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

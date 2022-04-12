@@ -1,0 +1,20 @@
+version: "3.0"
+
+nlu:
+- regex: name
+  examples: |
+    - /^[a-z ,.'-]+$/i
+
+- intent: inform
+  examples: |
+    - my name is [sahil](name)
+    - I am  [deep](name)
+    - hello my self [jay](name)
+
+- intent: finish
+  examples: |
+    - ok thank you
+    - thanks
+    - thank you
+
+

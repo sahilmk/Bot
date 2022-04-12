@@ -1,0 +1,6 @@
+[
+  {
+    "name": "namereg",
+    "pattern": "^[a-z]+$/i"
+  }
+]

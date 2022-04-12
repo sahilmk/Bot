@@ -1,0 +1,6 @@
+[
+  {
+    "name": "uname",
+    "pattern": "(\\bdeep\\b|\\bsahil\\b|\\bjay\\b)"
+  }
+]

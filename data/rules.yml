@@ -1,0 +1,8 @@
+version: "3.0"
+
+rules:
+
+- rule: greet rules
+  steps:
+  - intent: inform
+  - action: utter_inform
