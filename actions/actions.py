@@ -31,6 +31,8 @@ from typing import Any, Text, Dict, List
 
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
+import pymongo
+from pymongo import MongoClient
 
 
 class ActionHelloWorld(Action):
@@ -41,7 +43,8 @@ class ActionHelloWorld(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-
-        dispatcher.utter_message(text="Pleasure to meet you from action file")
+        client = MongoClient("mongodb+srv://m001-student:m001-mongodb-basics@bookme.orfgv.mongodb.net/bookmedb?retryWrites=true&w=majority")
+       
+        dispatcher.utter_message(client.list_database_names())
 
         return []
