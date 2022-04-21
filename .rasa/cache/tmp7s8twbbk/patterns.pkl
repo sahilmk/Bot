@@ -1,0 +1,10 @@
+[
+  {
+    "name": "name",
+    "pattern": "/^[a-z ,.'-]+$/i"
+  },
+  {
+    "name": "doctype",
+    "pattern": "(\\borthopedic\\b|\\bdental\\b)"
+  }
+]

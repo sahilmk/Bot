@@ -1,0 +1,24 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"problem\"}}]": "utter_problem",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"problem\"}}, {\"prev_action\": {\"action_name\": \"utter_problem\"}, \"user\": {\"intent\": \"problem\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"date\"}}]": "action_get_response",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"date\"}}, {\"prev_action\": {\"action_name\": \"action_get_response\"}, \"user\": {\"intent\": \"date\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"inform\"}}]": "utter_inform",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"inform\"}}, {\"prev_action\": {\"action_name\": \"utter_inform\"}, \"user\": {\"intent\": \"inform\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"time\"}}]": "utter_time",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"time\"}}, {\"prev_action\": {\"action_name\": \"utter_time\"}, \"user\": {\"intent\": \"time\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"email\"}}]": "utter_email",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"email\"}}, {\"prev_action\": {\"action_name\": \"utter_email\"}, \"user\": {\"intent\": \"email\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "predicting default action with intent back",
+      "predicting default action with intent restart",
+      "predicting default action with intent session_start"
+    ]
+  }
+}

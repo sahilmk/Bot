@@ -1,0 +1,36 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-doctype",
+      "2": "I-doctype",
+      "3": "L-doctype",
+      "4": "U-doctype",
+      "5": "B-name",
+      "6": "I-name",
+      "7": "L-name",
+      "8": "U-name",
+      "9": "B-regdate",
+      "10": "I-regdate",
+      "11": "L-regdate",
+      "12": "U-regdate",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-doctype": 1,
+      "I-doctype": 2,
+      "L-doctype": 3,
+      "U-doctype": 4,
+      "B-name": 5,
+      "I-name": 6,
+      "L-name": 7,
+      "U-name": 8,
+      "B-regdate": 9,
+      "I-regdate": 10,
+      "L-regdate": 11,
+      "U-regdate": 12,
+      "O": 0
+    },
+    "num_tags": 13
+  }
+]

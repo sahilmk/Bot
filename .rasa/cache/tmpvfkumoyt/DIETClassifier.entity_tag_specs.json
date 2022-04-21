@@ -1,0 +1,28 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-doctype",
+      "2": "I-doctype",
+      "3": "L-doctype",
+      "4": "U-doctype",
+      "5": "B-name",
+      "6": "I-name",
+      "7": "L-name",
+      "8": "U-name",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-doctype": 1,
+      "I-doctype": 2,
+      "L-doctype": 3,
+      "U-doctype": 4,
+      "B-name": 5,
+      "I-name": 6,
+      "L-name": 7,
+      "U-name": 8,
+      "O": 0
+    },
+    "num_tags": 9
+  }
+]
